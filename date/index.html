@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Date 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- QUESTION PAGE -->
+        <div class="card" id="questionCard">
+
+            <div class="heart">❤️</div>
+
+            <h1>Will You Go On A Date With Me?</h1>
+
+            <p>
+                I have something special planned for us...
+                Will you say yes? 🥰
+            </p>
+
+            <div class="buttons">
+                <button id="yesBtn">Yes! 💕</button>
+                <button id="noBtn">No 😢</button>
+            </div>
+
+        </div>
+
+
+        <!-- APPOINTMENT PAGE -->
+        <div class="card appointment-card" id="appointmentCard">
+
+            <div class="heart">🥰</div>
+
+            <h1>It's A Date! ❤️</h1>
+
+            <p>Let's plan our special day together.</p>
+
+            <form id="dateForm">
+
+                <label for="date">📅 What day?</label>
+                <input type="date" id="date" required>
+
+
+                <label for="time">🕐 What time?</label>
+                <input type="time" id="time" required>
+
+
+                <label for="place">📍 Where should we go?</label>
+                <input
+                    type="text"
+                    id="place"
+                    placeholder="Example: Ayala Mall"
+                    required
+                >
+
+
+                <label for="dateType">💕 What kind of date?</label>
+
+                <select id="dateType" required>
+                    <option value="">Choose a date</option>
+                    <option>🍽️ Dinner Date</option>
+                    <option>☕ Coffee Date</option>
+                    <option>🎬 Movie Date</option>
+                    <option>🎮 Gaming Date</option>
+                    <option>🌅 Sunset Date</option>
+                    <option>🌳 Park Date</option>
+                    <option>🛍️ Mall Date</option>
+                    <option>❤️ Surprise Date</option>
+                </select>
+
+
+                <label for="message">💌 Message for me</label>
+
+                <textarea
+                    id="message"
+                    placeholder="Write something sweet..."
+                ></textarea>
+
+
+                <button type="submit" class="confirm-btn">
+                    Confirm Our Date 💖
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- CONFIRMATION PAGE -->
+        <div class="card" id="confirmationCard">
+
+            <div class="big-heart">💖</div>
+
+            <h1>Date Confirmed!</h1>
+
+            <p id="confirmationText"></p>
+
+            <div class="love-message">
+                I can't wait to spend time with you! 🥰❤️
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
